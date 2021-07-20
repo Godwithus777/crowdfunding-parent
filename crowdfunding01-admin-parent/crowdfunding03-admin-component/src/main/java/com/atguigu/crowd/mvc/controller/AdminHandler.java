@@ -23,6 +23,7 @@ public class AdminHandler {
 	
 	
 	
+	// 分页显示Admin数据
 	@RequestMapping("/admin/get/page.html")
 	public String getPageInfo(
 				

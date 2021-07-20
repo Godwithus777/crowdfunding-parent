@@ -2,7 +2,9 @@ package com.atguigu.crowd.mapper;
 
 import com.atguigu.crowd.entity.Admin;
 import com.atguigu.crowd.entity.AdminExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface AdminMapper {
@@ -27,4 +29,6 @@ public interface AdminMapper {
     int updateByPrimaryKeySelective(Admin record);
 
     int updateByPrimaryKey(Admin record);
+	// 分页显示Admin数据
+	List<Admin> selectAdminByKeyword(String keyword);
 }
